@@ -2,7 +2,7 @@ plugin: amazon.aws.aws_ec2
 regions:
 - us-east-1
 filters:
-  tag:Name: nginx
+  tag:Name: backend
   instance-state-name : running
 hostnames:
   - private-ip-address  
@@ -10,3 +10,4 @@ compose:
   ansible_host: private_ip_address 
 
 #to get the nginx instance ip addresses
+#command -->  ansible-inventory -i aws_ec2.yml --graph
