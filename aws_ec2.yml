@@ -11,3 +11,5 @@ compose:
 
 #to get the nginx instance ip addresses
 #command -->  ansible-inventory -i aws_ec2.yml --graph
+
+#ansible-playbook -i aws_ec2.yml -e ansible_user=ec2-user -e ansible_password=DevOps321 03-nginx.yml
